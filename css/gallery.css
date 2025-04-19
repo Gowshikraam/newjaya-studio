@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to bottom right, #fff, #ffe4e6);
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #fca5a5;
+  color: #111;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.intro {
+  text-align: center;
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden; /* Hide anything that exceeds the bounds */
+  width: 300px;  /* Ensure it's a fixed size */
+  text-align: center;
+}
+
+.card img {
+  width: 100%; /* Makes sure the image fills the container's width */
+  height: 200px; /* Fixed height for consistency */
+  object-fit: cover;  /* Ensures the image fills the container without distorting */
+  object-position: center; /* Keeps the image centered */
+}
+
+.card h3 {
+  margin: 1rem 0 0.5rem;
+}
+
+.card p {
+  padding: 0 1rem 1rem;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.booking {
+  padding: 2rem 1rem;
+  background: white;
+  max-width: 600px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.booking h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.booking form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.booking input,
+.booking textarea {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.booking button {
+  background: #fb7185;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.booking button:hover {
+  background: #f43f5e;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #fca5a5;
+  margin-top: 2rem;
+}

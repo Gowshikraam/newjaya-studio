@@ -1,0 +1,53 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #fdfdfd, #f5f5f5);
+  color: #222;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+nav a:hover {
+  color: #fca311;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #111;
+  color: white;
+}
+
+/* Gallery */
+.gallery-images {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.gallery-images img {
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Forms */
+form input,
+form textarea {
+  width: 100%;
+ 
