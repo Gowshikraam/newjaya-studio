@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | NEW JAYA STUDIO</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8" />					  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEW JAYA STUDIO | Kumbakonam</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #fbe4e9, #e3d4f3);
+      color: #2c2c2c;
+      overflow-x: hidden;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(255, 255, 255, 0.4);
+      backdrop-filter: blur(10px);
+      padding: 20px 40px;
+      color: #2c2c2c;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      animation: slideDown 0.6s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      background: linear-gradient(45deg, #5c5aee, #2a2a72);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s ease;
+      position: relative;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 2px;
+      background: #5c5aee;
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    .hero {
+																																			 
+      height: 100vh;
+      display: flex;
+							 
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-image: linear-gradient(120deg, #f8d3e6, #dcd6f7);
+      position: relative;
+      padding: 20px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .hero-content {
+      max-width: 600px;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 30px 40px;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      animation: zoomIn 1s ease;
+    }
+
+    .hero h2 {
+      font-size: 2.8rem;
+      color: #2c2c2c;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 25px;
+      color: #444;
+    }
+
+    .btn {
+      padding: 12px 30px;
+      background: #5c5aee;
+				   
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #2a2a72;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.2);
+      color: #444;
+      font-size: 0.9rem;
+      backdrop-filter: blur(5px);
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .hero h2 {
+        font-size: 2rem;
+      }
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0.9); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NEW JAYA STUDIO</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<section class="services" style="padding: 60px 20px; background: #fff5f9;">
+  <div class="container" style="max-width: 1000px; margin: auto; text-align: center;">
+    <h2 style="font-size: 2.8rem; margin-bottom: 30px; color: #2a2a72;">Our Signature Services</h2>
+    <p style="font-size: 1.2rem; margin-bottom: 40px; color: #555;">
+      “Every picture tells a story — we make sure yours speaks beautifully.”
+    </p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; text-align: left;">
+      <div style="background: #ffffffcc; padding: 25px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+        <h3 style="color: #5c5aee;">Wedding Photography & Videography</h3>
+        <p>“Love captured in every frame.” We turn your special day into timeless memories with cinematic detail.</p>
+      </div>
+      <div style="background: #ffffffcc; padding: 25px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+        <h3 style="color: #5c5aee;">Portrait Sessions</h3>
+        <p>Studio portraits that reflect personality and style — perfect for individuals, couples, and families.</p>
+      </div>
+      <div style="background: #ffffffcc; padding: 25px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+        <h3 style="color: #5c5aee;">Event Coverage</h3>
+        <p>Whether it’s a birthday or a grand corporate event, we capture the essence of every moment.</p>
+      </div>
+      <div style="background: #ffffffcc; padding: 25px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+        <h3 style="color: #5c5aee;">Photo Albums & Prints</h3>
+        <p>“Memories that live beyond the screen.” Get premium prints and personalized albums made with love.</p>
+      </div>
+      <div style="background: #ffffffcc; padding: 25px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+        <h3 style="color: #5c5aee;">Passport & ID Photos</h3>
+        <p>Quick, professional passport, visa, and ID photos — all done with precision and speed.</p>
+      </div>
+      <div style="background: #ffffffcc; padding: 25px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+        <h3 style="color: #5c5aee;">Photo Restoration</h3>
+        <p>“Bring old memories back to life.” We digitally restore faded or damaged photos with care.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <footer>
+    <p>&copy; 2025 NEW JAYA STUDIO | Kumbakonam</p>
+  </footer>
+</body>
+</html>
