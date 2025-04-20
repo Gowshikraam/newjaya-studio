@@ -42,19 +42,20 @@
       </div>
 
       <!-- Form -->
-      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 15px;">
-        <!-- Hidden field for Netlify -->
-        <input type="hidden" name="form-name" value="contact" />
-        <!-- Hidden bot-field for spam protection -->
-        <p hidden>
-          <label>Don’t fill this out: <input name="bot-field" /></label>
-        </p>
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+  <input type="hidden" name="form-name" value="contact" />
+  
+  <p hidden>
+    <label>Don’t fill this out: <input name="bot-field" /></label>
+  </p>
 
-        <input type="text" name="name" placeholder="Your Name" required style="padding: 12px; border: 1px solid #ccc; border-radius: 10px;">
-        <input type="email" name="email" placeholder="Your Email" required style="padding: 12px; border: 1px solid #ccc; border-radius: 10px;">
-        <textarea name="message" rows="4" placeholder="Your Message" required style="padding: 12px; border: 1px solid #ccc; border-radius: 10px;"></textarea>
-        <button type="submit" class="btn" style="margin-top: 10px;">Send Message</button>
-      </form>
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="email" name="email" placeholder="Your Email" required />
+  <textarea name="message" placeholder="Your Message" required></textarea>
+
+  <button type="submit" class="btn">Send Message</button>
+</form>
+
     </div>
 
     <!-- Google Maps -->
